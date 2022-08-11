@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./atividades js.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--5. Crie cinco variáveis usando const. Na primeira armazene o nome de
+um aluno. Na segunda, terceira e quarta coloque 3 notas (valores de
+0 à 10). Calcule a média das notas e armazene na quinta variável let
+criada. Apresente no documento html a seguinte informação:
+"O aluno _____ ficou com média _,_"  -->
+
+    <script>
+      const nome = "Jubiscleison";
+      const a = Number(prompt("Digite a primeira nota: "));
+      const b = Number(prompt("Digite a segunda nota: "));
+      const c = Number(prompt("Digite a terceira nota: "));
+      let media = (a + b + c) / 3;
+      document.write("O aluno ", nome, " ficou com média ", media.toFixed(2));
+
+      if (media >= 7) {
+        document.write("<br> Ele foi Aprovado");
+      } else {
+        document.write("<br> Ele foi reprovado");
+      }
+    </script>
+    <hr />
+  </body>
+</html>
